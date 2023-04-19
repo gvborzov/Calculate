@@ -11,8 +11,8 @@ function startFunc(){
     let inputMaxValue = parseInt(prompt('Максимальное знание числа для игры','100'));
     minValue = inputMinValue || 0;
     maxValue = inputMaxValue || 100;
-    minValue = (inputMinValue >= -999 && inputMinValue <= 999) ? inputMinValue : -999;
-    maxValue = (inputMaxValue >= -999 && inputMaxValue <= 999) ? inputMaxValue : 999;
+    minValue = (minValue >= -999 && minValue <= 999) ? minValue : -999;
+    maxValue = (maxValue >= -999 && maxValue <= 999) ? maxValue : 999;
     alert(`Загадайте любое целое число от ${minValue} до ${maxValue}, а я его угадаю`);
     answerNumber  = Math.floor((minValue + maxValue) / 2);
     orderNumber = 1;
